@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Sweet Escape | cake shop pertama di sumedang</title>
+    <meta name="description" content="Sweet Escape | cake shop pertama di sumedang dengan tema Eropa jadul yang wajib kamu kunjungi..">
+    <meta name="keywords" content="cake shop sumedang, tempat nongkrong di sumedang">
+    <link rel="icon" type="image/x-icon" href="asset/img/logosquare.webp">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="container">
+    <div class="header-title">
+      <img src="asset/img/logopjg.webp" alt="Sweet Escape" class="logo-image" />
+    </div>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h2 class="hero-heading">Not Sure<br/>About Your<br/>Mood?</h2>
+            <div class="hero-btn" onclick="window.location.href='products.html'">
+                <span>Let Us Help!</span>
+                <div class="hero-btn-icon">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="floating-area">
+            <div class="float-shape shape-1"><div class="face-group"><div class="eyes"><div class="eye angle-left"></div><div class="eye angle-right"></div></div><div class="mouth-straight"></div></div></div>
+            <div class="float-shape shape-2"><div class="face-group"><div class="eyes"><div class="eye dot"></div><div class="eye dot"></div></div><div class="mouth-u"></div></div></div>
+            <div class="float-shape shape-3"><div class="face-group"><div class="eyes"><div class="eye flat"></div><div class="eye flat"></div></div><div class="mouth-u half"></div></div></div>
+            <div class="float-shape shape-4"><div class="face-group"><div class="eyes"><div class="eye angle-right"></div><div class="eye angle-left"></div></div><div class="mouth-straight"></div></div></div>
+            <div class="float-shape shape-5"><div class="face-group"><div class="eyes"><div class="eye arch"></div><div class="eye arch"></div></div><div class="mouth-dot"></div></div></div>
+        </div>
+    </section>
+
+    <section class="actions-section">
+        <div class="section-header center">
+            <p class="subtitle">Curated Actions</p>
+            <h3>Experience More</h3>
+        </div>
+
+        <a href="https://wa.me/message/OUVQ2TULI73TI1" target="_blank" class="action-card">
+            <div class="action-icon"><span class="material-symbols-outlined">chat</span></div>
+            <div class="action-text">
+                <h4>WhatsApp</h4>
+                <p>Direct consultation</p>
+            </div>
+            <button class="action-btn">Chat</button>
+        </a>
+
+        <a href="https://r.grab.com/g/2-1-6-C7UTBEUJVPXYRX" target="_blank" class="action-card">
+            <div class="action-icon"><span class="material-symbols-outlined">two_wheeler</span></div>
+            <div class="action-text">
+                <h4>GrabFood</h4>
+                <p>Delivery cepat via Grab</p>
+            </div>
+            <button class="action-btn">Order</button>
+        </a>
+
+        <a href="https://share.google/O9kdntXAPEqj8fHFC" target="_blank" class="action-card">
+            <div class="action-icon"><span class="material-symbols-outlined">location_on</span></div>
+            <div class="action-text">
+                <h4>Direct Maps</h4>
+                <p>Kunjungi toko kami</p>
+            </div>
+            <button class="action-btn">Maps</button>
+        </a>
+
+        <a href="https://www.tiktok.com/@sweetescape.inc?_r=1&_t=zs-91bsb1ogn9u" target="_blank" class="action-card">
+            <div class="action-icon"><span class="material-symbols-outlined">play_arrow</span></div>
+            <div class="action-text">
+                <h4>TikTok</h4>
+                <p>Tonton keseruan kami</p>
+            </div>
+            <button class="action-btn">Watch</button>
+        </a>
+    </section>
+</main>
+
+<nav class="bottom-nav">
+    <div class="nav-container">
+        <a class="nav-item active" href="index.html">
+            <span class="material-symbols-outlined">storefront</span>
+            <span class="nav-label">Boutique</span>
+        </a>
+        <a class="nav-item" href="products.html">
+            <span class="material-symbols-outlined">category</span>
+            <span class="nav-label">Products</span>
+        </a>
+        <div class="nav-item" onclick="toggleCart()">
+            <div class="nav-icon-wrapper">
+                <span class="material-symbols-outlined">receipt_long</span>
+                <span id="cart-badge" class="cart-badge">0</span>
+            </div>
+            <span class="nav-label">Orders</span>
+        </div>
+    </div>
+</nav>
+
+<div id="cart-overlay" class="cart-overlay" onclick="toggleCart()"></div>
+<div id="cart-panel" class="cart-panel">
+    <div class="cart-header">
+        <h2>Your Orders</h2>
+        <button onclick="toggleCart()" class="close-btn"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+        <div class="cart-total-row">
+            <span>Total</span>
+            <span id="cart-total" class="total-price">IDR 0</span>
+        </div>
+        <button onclick="checkoutWhatsApp()" class="checkout-btn">
+            Order via WhatsApp <span class="material-symbols-outlined">send</span>
+        </button>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

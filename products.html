@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Sweet Escape | Products</title>
+    <meta name="description" content="Sweet Escape | cake shop pertama di sumedang dengan tema Eropa jadul yang wajib kamu kunjungi..">
+    <meta name="keywords" content="cake shop sumedang, tempat nongkrong di sumedang">
+    <link rel="icon" type="image/x-icon" href="asset/img/logosquare.webp">
+  
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="container">
+    <div class="header-title">
+        <img src="asset/img/logopjg.webp" alt="Sweet Escape" class="logo-image" />
+    </div>
+
+    <section class="boutique-section" style="margin-top: 2rem;">
+        <div class="section-header">
+            <h3>Our Catalogue</h3>
+        </div>
+        
+        <div id="product-grid" class="product-grid"></div>
+    </section>
+</main>
+
+<nav class="bottom-nav">
+    <div class="nav-container">
+        <a class="nav-item" href="index.html">
+            <span class="material-symbols-outlined">storefront</span>
+            <span class="nav-label">Boutique</span>
+        </a>
+        <a class="nav-item active" href="products.html">
+            <span class="material-symbols-outlined">category</span>
+            <span class="nav-label">Products</span>
+        </a>
+        <div class="nav-item" onclick="toggleCart()">
+            <div class="nav-icon-wrapper">
+                <span class="material-symbols-outlined">receipt_long</span>
+                <span id="cart-badge" class="cart-badge">0</span>
+            </div>
+            <span class="nav-label">Orders</span>
+        </div>
+    </div>
+</nav>
+
+<div id="cart-overlay" class="cart-overlay" onclick="toggleCart()"></div>
+<div id="cart-panel" class="cart-panel">
+    <div class="cart-header">
+        <h2>Your Orders</h2>
+        <button onclick="toggleCart()" class="close-btn"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+        <div class="cart-total-row">
+            <span>Total</span>
+            <span id="cart-total" class="total-price">IDR 0</span>
+        </div>
+        <button onclick="checkoutWhatsApp()" class="checkout-btn">
+            Order via WhatsApp <span class="material-symbols-outlined">send</span>
+        </button>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
