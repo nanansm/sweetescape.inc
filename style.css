@@ -215,7 +215,7 @@ button, a { cursor: pointer; text-decoration: none; outline: none; color: inheri
     border-top: var(--classic-border); 
     box-shadow: 0 -5px 20px rgba(139, 9, 9, 0.05); 
 }
-.nav-container { display: flex; justify-content: space-evenly; align-items: center; gap: 1rem; padding: 0.75rem 1rem 1.5rem 1rem; max-width: 36rem; margin: 0 auto; }
+.nav-container { display: flex; justify-content: space-evenly; align-items: center; gap: 1rem; padding: 0.75rem 1rem 0.75rem 1rem; max-width: 36rem; margin: 0 auto; }
 .nav-item { 
     display: flex; flex-direction: column; align-items: center; justify-content: center; 
     padding: 0.5rem 1rem; border-radius: 0px; color: var(--on-surface-variant); 
