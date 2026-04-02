@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <title>Sweet Escape | cake shop pertama di sumedang</title>
+    <title>Sweet Escape | Cake shop pertama di sumedang</title>
     <meta name="description" content="Sweet Escape | cake shop pertama di sumedang dengan tema Eropa jadul yang wajib kamu kunjungi..">
     <meta name="keywords" content="cake shop sumedang, tempat nongkrong di sumedang">
     <link rel="icon" type="image/x-icon" href="asset/img/logosquare.webp">
@@ -11,6 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>  
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    
+
 </head>
 <body>
 
@@ -20,26 +25,19 @@
     </div>
 
     <section class="hero-section">
-        <div class="hero-content">
-            <h2 class="hero-heading">Not Sure<br/>About Your<br/>Mood?</h2>
-            <div class="hero-btn" onclick="window.location.href='products.html'">
-                <span>Let Us Help!</span>
-                <div class="hero-btn-icon">
-                    <span class="material-symbols-outlined">arrow_forward</span>
-                </div>
-            </div>
-        </div>
+        
+        <img src="asset/img/ilus1.webp" alt="Sweet Escape Illustration" class="hero-background-art" />
 
-        <div class="floating-area">
-            <div class="float-shape shape-1"><div class="face-group"><div class="eyes"><div class="eye angle-left"></div><div class="eye angle-right"></div></div><div class="mouth-straight"></div></div></div>
-            <div class="float-shape shape-2"><div class="face-group"><div class="eyes"><div class="eye dot"></div><div class="eye dot"></div></div><div class="mouth-u"></div></div></div>
-            <div class="float-shape shape-3"><div class="face-group"><div class="eyes"><div class="eye flat"></div><div class="eye flat"></div></div><div class="mouth-u half"></div></div></div>
-            <div class="float-shape shape-4"><div class="face-group"><div class="eyes"><div class="eye angle-right"></div><div class="eye angle-left"></div></div><div class="mouth-straight"></div></div></div>
-            <div class="float-shape shape-5"><div class="face-group"><div class="eyes"><div class="eye arch"></div><div class="eye arch"></div></div><div class="mouth-dot"></div></div></div>
+        <div class="hero-content">
+            <h2 class="hero-heading">not sure<br/>about your<br/>mood?</h2>
+            <div class="hero-btn" onclick="window.location.href='#biolink'">
+                <span>Let Us Help!</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </div>
         </div>
     </section>
 
-    <section class="actions-section">
+    <section class="actions-section" id="biolink">
         <div class="section-header center">
             <p class="subtitle">Curated Actions</p>
             <h3>Experience More</h3>
@@ -52,6 +50,15 @@
                 <p>Direct consultation</p>
             </div>
             <button class="action-btn">Chat</button>
+        </a>
+
+        <a href="products.html" class="action-card">
+            <div class="action-icon"><span class="material-symbols-outlined">category</span></div>
+            <div class="action-text">
+                <h4>Catalog Products</h4>
+                <p>View our products</p>
+            </div>
+            <button class="action-btn">View</button>
         </a>
 
         <a href="https://r.grab.com/g/2-1-6-C7UTBEUJVPXYRX" target="_blank" class="action-card">
@@ -72,15 +79,27 @@
             <button class="action-btn">Maps</button>
         </a>
 
-        <a href="https://www.tiktok.com/@sweetescape.inc?_r=1&_t=zs-91bsb1ogn9u" target="_blank" class="action-card">
-            <div class="action-icon"><span class="material-symbols-outlined">play_arrow</span></div>
-            <div class="action-text">
-                <h4>TikTok</h4>
-                <p>Tonton keseruan kami</p>
-            </div>
-            <button class="action-btn">Watch</button>
-        </a>
     </section>
+
+    <footer class="main-footer">
+        <h4 class="footer-title">Follow us on :</h4>
+        
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@sweetescape.inc" target="_blank" class="social-icon">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://instagram.com/sweetescape.inc" target="_blank" class="social-icon">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+
+        <p class="footer-address">
+            Jl. R.A. Kartini No.08E, Regol Wetan,<br>
+            Kec. Sumedang Sel., Kab. Sumedang,<br>
+            Jawa Barat 45311
+        </p>
+    </footer>
+
 </main>
 
 <nav class="bottom-nav">
